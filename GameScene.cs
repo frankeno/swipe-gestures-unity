@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems
+
+/* ------------------------------------------------------------
+    DRAG THIS FILE INTO THE MainCamera IN THE UNITY EDITOR
+------------------------------------------------------------ */
 
 public class GameScene: MonoBehaviour {
 
-    public GameObject myObject;
+    public GameObject myObject; // THIS IS THE TARGET OBJECT THAT WILL PERFORM SOME ACTION ON SWIPES | REMEMBER TO DRAG IT INTO THE INSPECTOR!
 
     // Swipe gestures variables
     Vector2 firstPressPos;
@@ -56,7 +59,5 @@ public class GameScene: MonoBehaviour {
         } //./ TouchUp
 
     } // ./ Update()
-
-
 
 }// ./ end
